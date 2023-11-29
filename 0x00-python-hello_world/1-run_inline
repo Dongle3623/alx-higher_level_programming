@@ -1,3 +1,2 @@
 #!/bin/bash
-
-[ -z "$PYCODE" ] && { echo "Error: PYCODE environment variable is not set."; exit 1; } ; echo "$PYCODE" | python3 -
+pycodestyle <(echo "$PYCODE") && python <(echo "$PYCODE")
